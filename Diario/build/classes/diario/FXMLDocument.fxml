@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefWidth="940.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diario.FXMLDocumentController">
+   <children>
+      <ImageView fitWidth="940.0" layoutX="4.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@imagens/download.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="loginPane" layoutX="548.0" layoutY="73.0" prefHeight="388.0" prefWidth="315.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <JFXTextField fx:id="user_textfield" focusColor="#dad6d6" layoutX="37.0" layoutY="133.0" prefHeight="25.0" prefWidth="242.0" promptText="Nome de utilizador" style="-fx-text-fill: WHITE; -fx-prompt-text-fill: #d0cccc;" unFocusColor="#c3b7b7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pass_textfield" focusColor="#dad6d6" layoutX="37.0" layoutY="203.0" prefHeight="25.0" prefWidth="242.0" promptText="Password" style="-fx-text-fill: WHITE; -fx-prompt-text-fill: #d0cccc;" unFocusColor="#c3b7b7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="38.0" layoutY="296.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="242.0" style="-fx-background-color: #E45652;" text="Entrar" textFill="#dad6d6" />
+            <Label layoutX="99.0" layoutY="34.0" text="Iniciar Sessão" textFill="#d0cccc">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="56.0" layoutY="175.0" prefHeight="180.0" prefWidth="425.0">
+         <children>
+            <Label text="SecDiary" textFill="WHITE">
+               <font>
+                  <Font size="72.0" />
+               </font>
+            </Label>
+            <Label layoutY="89.0" prefHeight="59.0" prefWidth="414.0" text="Guarde os seus segredos de forma segura usando o SecDiary" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="regButton" layoutY="158.0" onAction="#switcherButton" prefHeight="27.0" prefWidth="195.0" style="-fx-background-color: #E45652;" text="Registar" textFill="#dad6d6" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="registerPane" layoutX="548.0" layoutY="73.0" prefHeight="388.0" prefWidth="315.0" style="-fx-background-color: #9C2B27;" visible="false">
+         <children>
+            <JFXTextField fx:id="regUserField" focusColor="#dad6d6" layoutX="38.0" layoutY="107.0" prefHeight="25.0" prefWidth="242.0" promptText="Nome de utilizador" style="-fx-text-fill: WHITE; -fx-prompt-text-fill: #d0cccc;" unFocusColor="#c3b7b7" AnchorPane.bottomAnchor="253.0" AnchorPane.topAnchor="107.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="regPassField" focusColor="#dad6d6" layoutX="37.0" layoutY="176.0" prefHeight="25.0" prefWidth="242.0" promptText="Password" style="-fx-text-fill: WHITE; -fx-prompt-text-fill: #d0cccc;" unFocusColor="#c3b7b7" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="37.0" layoutY="312.0" onAction="#handleRegister" prefHeight="25.0" prefWidth="242.0" style="-fx-background-color: #E45652;" text="Registar" textFill="#dad6d6" />
+            <Label layoutX="119.0" layoutY="34.0" text="Registar" textFill="#d0cccc">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="regVerifyPassField" focusColor="#dad6d6" layoutX="37.0" layoutY="232.0" prefHeight="25.0" prefWidth="242.0" promptText="Repetir password" style="-fx-text-fill: WHITE; -fx-prompt-text-fill: #d0cccc;" unFocusColor="#c3b7b7" AnchorPane.topAnchor="232.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

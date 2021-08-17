@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="542.0" minWidth="941.0" prefHeight="542.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diario.FXMLMainPageController">
+   <children>
+      <JFXListView layoutX="-1.0" prefHeight="533.0" prefWidth="133.0" style="-fx-background-color: #73201d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="95.0" fitWidth="97.0" layoutX="18.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/newfile_icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton defaultButton="true" layoutX="-1.0" layoutY="-6.0" opacity="0.15" prefHeight="135.0" prefWidth="133.0" style="-fx-background-color: #E45652;" text=" ">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="95.0" fitWidth="97.0" layoutX="18.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/printer_icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-1.0" layoutY="139.0" opacity="0.15" prefHeight="135.0" prefWidth="133.0" style="-fx-background-color: #E45652;" text=" " />
+      <ImageView fitHeight="95.0" fitWidth="97.0" layoutX="18.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/pdf_icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-1.0" layoutY="285.0" opacity="0.15" prefHeight="119.0" prefWidth="133.0" style="-fx-background-color: #E45652;" text=" " />
+      <ImageView fitHeight="95.0" fitWidth="97.0" layoutX="18.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/save_icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-1.0" layoutY="414.0" opacity="0.15" prefHeight="119.0" prefWidth="133.0" style="-fx-background-color: #E45652;" text=" " />
+      <AnchorPane layoutX="133.0" prefHeight="533.0" prefWidth="810.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar layoutX="-1.0" prefHeight="494.0" prefWidth="810.0" style="-fx-background-color: #d0cccc;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Ficheiro">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Abrir Ficheiro" />
+                        <MenuItem mnemonicParsing="false" text="Guardar e Terminar Sessão" />
+                        <MenuItem mnemonicParsing="false" text="Terminar Sessão" />
+                        <MenuItem mnemonicParsing="false" text="Guardar e Sair" />
+                        <MenuItem mnemonicParsing="false" text="Sair" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Editar">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Cortar" />
+                        <MenuItem mnemonicParsing="false" text="Copiar" />
+                        <MenuItem mnemonicParsing="false" text="Colar" />
+                        <MenuItem mnemonicParsing="false" text="Apagar" />
+                        <MenuItem mnemonicParsing="false" text="Selecionar Todos" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Ajuda">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Procurar por atualizações" />
+                        <MenuItem mnemonicParsing="false" text="Acreca do SecDiary" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <TextArea layoutX="6.0" layoutY="23.0" minHeight="396.0" minWidth="791.0" prefHeight="396.0" prefWidth="791.0" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="23.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <AnchorPane layoutX="-1.0" layoutY="438.0" prefHeight="119.0" prefWidth="810.0" style="-fx-background-color: #d0cccc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="79.0" prefHeight="21.0" prefWidth="168.0" text="Pesquisa por datas:   de">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker defaultColor="#e45652" layoutX="192.0" layoutY="76.0" style="-fx-text-fill: #E45652;" />
+                  <Label layoutX="379.0" layoutY="80.0" text="até">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker defaultColor="#e45652" layoutX="423.0" layoutY="77.0" />
+                  <JFXButton layoutX="625.0" layoutY="77.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #E45652;" text="Pesquisar" textFill="#dad6d6" AnchorPane.rightAnchor="17.0" />
+                  <JFXTextField focusColor="#e45652" layoutX="17.0" layoutY="21.0" prefHeight="31.0" prefWidth="774.0" promptText="Pesquisa por texto (os resultados são apresentados em cima por ordem de relevância)" style="-fx-prompt-text-fill: #E45652;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

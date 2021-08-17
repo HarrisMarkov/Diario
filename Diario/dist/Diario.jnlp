@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Diario.jnlp">
+  <information>
+    <title>Diario</title>
+    <vendor>harri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Diario.jar" size="131521" download="eager" />
+    <jar href="lib\javafx-swt.jar" size="36806" download="eager" />
+    <jar href="lib\javafx.base.jar" size="749889" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2511136" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="127394" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4295252" download="eager" />
+    <jar href="lib\javafx.media.jar" size="270594" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="119848" download="eager" />
+    <jar href="lib\javafx.web.jar" size="712659" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Diario" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="diario.Diario"  name="Diario" />
+  <update check="always"/>
+</jnlp>
